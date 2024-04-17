@@ -34,11 +34,12 @@
 	
 }
 
-.tab button {
+.tab {
 	padding: 14px 16px;
 	transition: 0.3s;
 	font-size: 17px;
-	border-bottom: 1px solid transparent;
+	border-bottom: 1px solid #121212;
+	cursor: pointer;
 
 	&:hover{
 		background-color: #ddd;
@@ -49,6 +50,7 @@
 		background-color: #ccc;
 	}
 }
+
 
 .main__content {
 	display: flex;

@@ -22,20 +22,35 @@ const TAB__LINKS = [
 ]
 
 const tabHeader = () => {
-    const tab = createElement('div','tab')
+    const tab = createElement
+    ('div','tab')
 
     TAB__LINKS.forEach((elem) => {
-        const buttonTab = createElement(
-            'button',
+        const changeTab = createElement(
+            'div',
             elem.active 
-            ? 'button button--active'
-            : 'button',
-            elem.link,
+            ? 'change change--active'
+            : 'change',   
+            )
+
+        const text = createElement(
+            'div',
+            'change__text',
+            elem.link
         )
 
-        tab.append(buttonTab)
+        const under = createElement(
+            'div',
+            'change__under'
+        )
+
+        changeTab.append(text,under)
+ 
+
+        tab.append(changeTab)
         
     })
+    return tab
 }
 
 const POST__LINK = [
@@ -44,7 +59,7 @@ const POST__LINK = [
     }
 ]
 
-const POST__INFO = [
+const POST__INFO_2 = [
     {
   title: "Що таке база знань?",
   info: "База знаний — база данных, содержащая правила вывода и информацию о человеческом опыте и знаниях в некоторой предметной области. В самообучающихся системах база знаний также содержит информацию, являющуюся результатом решения предыдущих задач.",
@@ -59,14 +74,14 @@ const createList = () => {
     POST__LINK.forEach((parmas) => {
         const postImg = createElement('img')
 
-        Object.entries(parmas).forEach(([key,value]) =>{
+        Object.entries(parmas).forEach(([key,value]) => {
             postImg[key] = value
         })
 
         postList.append(postImg)
     })
 
-    POST__INFO.forEach((postInfo) => {
+    POST__INFO_2.forEach((postInfo) => {
         const postItem = createElement(
             'h3', 'main__title', postInfo.title,
         )
@@ -87,5 +102,6 @@ const createList = () => {
 }
 const tabl = tabHeader()
 page.append(tabl)
+
 const post = createList()
 page.append(post)
