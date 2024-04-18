@@ -1,6 +1,24 @@
+html {
+	box-sizing: border-box;
+}
 
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
 
 body {
-	font-family: 'Roboto', sans-serif;
-	padding: 100px;
+	font-family: 'Inter', sans-serif;
+	color: #000;
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 1.2;
+
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+	background-color: transparent;
 }

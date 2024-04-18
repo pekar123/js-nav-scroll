@@ -14,20 +14,18 @@ router.get('/', function (req, res) {
   // res.render генерує нам HTML сторінку
 
   // ↙️ cюди вводимо назву файлу з сontainer
-  res.render('index', {
+  res.render('air-pods', {
     // вказуємо назву контейнера
-    name: 'index',
+    name: 'air-pods',
     // вказуємо назву компонентів
     component: ['heading'],
 
     // вказуємо назву сторінки
-    title: 'Назва сторінки',
+    title: 'Air Pods MAC',
     // ... сюди можна далі продовжувати додавати потрібні технічні дані, які будуть використовуватися в layout
 
     // вказуємо дані,
-    data: {
-      test: new Test().test,
-    },
+    data: {},
   })
   // ↑↑ сюди вводимо JSON дані
 })
