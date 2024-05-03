@@ -15,7 +15,7 @@
             <nav class="menu">
                 <ul class="menu__list">
                     <li class="menu__item">
-                        <a href="" class="menu__link">Info position</a>
+                        <a href="" class="menu__link">Info</a>
                     </li>
                     <li class="menu__item">
                         <a href="" class="menu__link">Product</a>
@@ -23,7 +23,7 @@
                     <li class="menu__item">
                         <a href="" class="menu__link">Contacts</a>
                     </li>
-                    <li class="menu__item">
+                    <li class="menu__item menu__item-btn">
                         <button href="" class="menu__btn">BUY</button>
                     </li>
                 </ul>
@@ -40,11 +40,16 @@
             </h1>
 
             <div class="header__content-images">
-                {{!-- <img src="../img/header-airpods/airpods-max-select-green-202011 1.png" alt=""> --}}
-                {{!-- <img src="../img/header-airpods/airpods-max-select-black-202011 1.png" alt=""> --}}
-                {{!-- <img src="../img/header-airpods/airpods-max-select-white-202011 1.png" alt=""> --}}
-                <img src="../img/header-airpods/airpods-max-select-skyblue-202011 1.png" alt="">
-                {{!-- <img src="../img/header-airpods/airpods-max-select-yellow-202011 1.png" alt=""> --}}
+                <img class="content-item color--green" src="../img/header-airpods/airpods-max-select-green-202011 1.png"
+                    alt="">
+                <img class="content-item color--black" src="../img/header-airpods/airpods-max-select-black-202011 1.png"
+                    alt="">
+                <img class="content-item color--white" src="../img/header-airpods/airpods-max-select-white-202011 1.png"
+                    alt="">
+                <img class="content-item color--skyblue content-item--active"
+                    src="../img/header-airpods/airpods-max-select-skyblue-202011 1.png" alt="">
+                <img class="content-item color--yellow"
+                    src="../img/header-airpods/airpods-max-select-yellow-202011 1.png" alt="">
             </div>
 
         </div>
@@ -62,19 +67,19 @@
             </p>
 
             <div class="choose--color__list">
-                {{!-- <button class="choose__color-btn">
+                <button class="choose__color-btn choose__color-btn--active" data-button="color--blue">
                     <img src="../img/tab-airpods/airpods-max-select-skyblue-202011 2.png" alt="">
-                </button> --}}
-                <button class="choose__color-btn">
+                </button>
+                <button class="choose__color-btn" data-button="color--black">
                     <img src="../img/tab-airpods/airpods-max-select-black-202011 2.png" alt="">
                 </button>
-                <button class="choose__color-btn">
+                <button class="choose__color-btn" data-button="color--white">
                     <img src="../img/tab-airpods/airpods-max-select-white-202011 2.png" alt="">
                 </button>
-                <button class="choose__color-btn">
+                <button class="choose__color-btn" data-button="color--green">
                     <img src="../img/tab-airpods/airpods-max-select-green-202011 2.png" alt="">
                 </button>
-                <button class="choose__color-btn">
+                <button class="choose__color-btn" data-button="color--yellow">
                     <img src="../img/tab-airpods/airpods-max-select-yellow-202011 2.png" alt="">
                 </button>
             </div>
@@ -99,14 +104,16 @@
                     <p>The telescoping arms expand and stay in any position you want, allowing you to maintain fit and
                         isolation.</p>
                 </div>
-                {{!-- <img src="../img/main-airpods-side/design_colors_silver_black__ff3nerq51ka6_xlarge_2x 1.jpg"
-                    alt=""> --}}
-                <img src="../img/main-airpods-side/design_colors_silver_skyblue__ff3nerq51ka6_xlarge_2x 1.jpg" alt="">
-                {{!-- <img src="../img/main-airpods-side/design_colors_silver_white__ff3nerq51ka6_xlarge_2x 1.jpg"
-                    alt="">
-                <img src="../img/main-airpods-side/design_colors_silver_yellow__ff3nerq51ka6_xlarge_2x 1.jpg" alt="">
-                <img src="../img/main-airpods-side/design_colors_silver_green__ff3nerq51ka6_xlarge_2x 1.jpg" alt="">
-                --}}
+                <img class="content-item color--black"
+                    src="../img/main-airpods-side/design_colors_silver_black__ff3nerq51ka6_xlarge_2x 1.jpg" alt="">
+                <img class="content-item color--skyblue content-item--active"
+                    src="../img/main-airpods-side/design_colors_silver_skyblue__ff3nerq51ka6_xlarge_2x 1.jpg" alt="">
+                <img class="content-item color--white"
+                    src="../img/main-airpods-side/design_colors_silver_white__ff3nerq51ka6_xlarge_2x 1.jpg" alt="">
+                <img class="content-item color--yellow"
+                    src="../img/main-airpods-side/design_colors_silver_yellow__ff3nerq51ka6_xlarge_2x 1.jpg" alt="">
+                <img class="content-item color--green"
+                    src="../img/main-airpods-side/design_colors_silver_green__ff3nerq51ka6_xlarge_2x 1.jpg" alt="">
 
             </div>
 
@@ -118,11 +125,16 @@
             <h2 class="case__title main__title">It even preserves the battery.</h2>
             <p class="case__text">When stored in the sleek and lightweight Smart Case , AirPods Max enter a low-power
                 state to save energy.</p>
-            {{!-- <img src="../img/main-airpods-case/airpods-max-smartcase-black-witb 1.jpg" alt=""> --}}
-            <img src="../img/main-airpods-case/airpods-max-smartcase-skyblue-witb 1.jpg" alt="">
-            {{!-- <img src="../img/main-airpods-case/airpods-max-smartcase-green-witb 1.jpg" alt=""> --}}
-            {{!-- <img src="../img/main-airpods-case/airpods-max-smartcase-white-witb 1.jpg" alt=""> --}}
-            {{!-- <img src="../img/main-airpods-case/airpods-max-smartcase-yellow-witb 1.jpg" alt=""> --}}
+            <img class="content-item color--black "
+                src="../img/main-airpods-case/airpods-max-smartcase-black-witb 1.jpg" alt="">
+            <img class="content-item color--skyblue content-item--active"
+                src="../img/main-airpods-case/airpods-max-smartcase-skyblue-witb 1.jpg" alt="">
+            <img class="content-item color--green" src="../img/main-airpods-case/airpods-max-smartcase-green-witb 1.jpg"
+                alt="">
+            <img class="content-item color--white" src="../img/main-airpods-case/airpods-max-smartcase-white-witb 1.jpg"
+                alt="">
+            <img class="content-item color--yellow"
+                src="../img/main-airpods-case/airpods-max-smartcase-yellow-witb 1.jpg" alt="">
             <h2 class="energy__title main__title">
                 Stayin' alive, stayin' alive.
             </h2>
@@ -156,7 +168,21 @@
 </main>
 
 <footer class="footer">
+    <div class="conteiner">
+        <a class="footer__link" href="">Find a retailer near you</a>
+        <p class="footer__text">Or call 800 207 758</p>
+        <a class="logo" href="#">
+            <img src="../svg/logo-white.svg" alt="">
+        </a>
 
+        <ul class="footer__list">
+            <li class="footer__item">Copyright © 2023 Apple Inc. </li>
+            <li class="footer__item">All rights reserved.</li>
+            <li class="footer__item"><a href="#">Legal Notices</a></li>
+            <li class="footer__item"><a href="#">Site Map</a></li>
+            <li class="footer__item"><a href="#">Privacy Policy</a></li>
+        </ul>
+    </div>
 </footer>
 
 
