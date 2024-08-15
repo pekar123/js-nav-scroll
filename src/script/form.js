@@ -66,7 +66,7 @@ export class Form {
       }
     })
 
-    const button = document.querySelector(`.button`)
+    const button = document.querySelector('.button')
 
     if (button) {
       button.classList.toggle(
