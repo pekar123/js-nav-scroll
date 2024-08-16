@@ -1,5 +1,5 @@
 export const REGEXP_EMAIL = new RegExp(
-  /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/g,
+  /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/g,
 )
 
 export const REGEXP_PASSWORD = new RegExp(
@@ -66,7 +66,7 @@ export class Form {
       }
     })
 
-    const button = document.querySelector(`.button`)
+    const button = document.querySelector('.button')
 
     if (button) {
       button.classList.toggle(
