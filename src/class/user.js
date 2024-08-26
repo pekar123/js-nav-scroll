@@ -7,10 +7,21 @@ class User {
 
   static #list = []
 
-  constructor({ email, password, role }) {
-    this.email = email
-    this.password = password
-    this.role = role
+  static #count = 1
+
+  constructor({
+    email,
+    password,
+    role,
+    isConfirm = false,
+  }) {
+    this.id = User.#count++
+
+    this.email = String(email).toLowerCase()
+    this.password = String(password)
+    this.role = User.#convertRole(role)
+
+    this.isConfirm = isConfirm
   }
 
   static #convertRole = (role) => {
@@ -28,20 +39,28 @@ class User {
   }
 
   static create(data) {
-    const user = new User(data)
-
-    console.log(user)
+    //Створення та додавання користувача в #list
+    const user = new User(data) //створення користувача із data
 
     this.#list.push(user)
 
     console.log(this.#list)
+
+    return user
   }
 
   static getByEmail(email) {
     return (
-      this.#list.find((user) => user.email === email) ||
-      null
+      this.#list.find(
+        (user) =>
+          user.email === String(email).toLowerCase(),
+      ) || null
     )
+  }
+
+  // Новий метод для отримання всіх користувачів
+  static getAllUsers() {
+    return this.#list
   }
 }
 
